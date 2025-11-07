@@ -2,26 +2,29 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8">
+    
     <title>{{ page.title | default: site.title }}</title>
-    <meta name="google-site-verification" content="7VA80-x-lmQerCiNP6ppNQmkxE5NzBcO1nAa62WjFlA" />
-
+    
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
+  
   <body>
     <div class="wrapper">
       <header>
         <h1><a href="{{ '/' | absolute_url }}">{{ site.title }}</a></h1>
         <p>Insights de IA para Lojistas Shopify e Shopee</p>
       </header>
-
+      
       <section>
-        {% if page.date %}
+        {% if page.path contains '_posts' %}
+          
           <header class="post-header">
             <h2>{{ page.title }}</h2>
             <p><small>Publicado em: {{ page.date | date: "%d/%m/%Y" }}</small></p>
           </header>
           <hr> 
+          
         {% endif %}
         {{ content }}
 
