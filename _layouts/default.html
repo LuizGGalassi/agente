@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ page.title | default: site.title }}</title>
+
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="{{ '/' | absolute_url }}">{{ site.title }}</a></h1>
+        <p>Insights de IA para Lojistas Shopify e Shopee</p>
+      </header>
+
+      <section>
+        {{ content }}
+
+      </section>
+
+      <hr>
+      <section id="monetizacao">
+        <h3>🚀 Ferramentas Recomendadas</h3>
+        <p>Otimize sua loja com as ferramentas que os profissionais usam:</p>
+        <ul>
+          <li>
+            <a href="SEU_LINK_DE_AFILIADO_KLAVIYO_AQUI" target="_blank" rel="nofollow">
+              <strong>Klaviyo:</strong> O melhor E-mail Marketing para E-commerce.
+            </a>
+          </li>
+          <li>
+            <a href="SEU_LINK_DE_AFILIADO_LOOX_AQUI" target="_blank" rel="nofollow">
+              <strong>Loox:</strong> Adicione Reviews de clientes com fotos.
+            </a>
+          </li>
+          <li>
+            <a href="SEU_LINK_DE_AFILIADO_TEMA_AQUI" target="_blank" rel="nofollow">
+              <strong>Temas Premium:</strong> Otimize sua conversão com um tema profissional.
+            </a>
+          </li>
+        </ul>
+      </section>
+      <footer>
+        <p><small>Site gerado 100% por um agente autônomo.</small></p>
+      </footer>
+    </div>
+  </body>
+</html>
