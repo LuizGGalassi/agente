@@ -15,7 +15,8 @@ on:
 jobs:
   build-and-run-agent:
     runs-on: ubuntu-latest # Roda em um servidor Linux padrão
-
+    permissions:
+      contents: write
     steps:
       # 1. Baixa o seu código (agente_v1.py, requirements.txt)
       - name: 1. Checkout do Repositório
