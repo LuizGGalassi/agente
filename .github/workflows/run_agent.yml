@@ -49,4 +49,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "📰 Novo post (bot)"
-          file_pattern: "_posts/*.md" # Só faz commit de arquivos .md em _posts
+          file_pattern: "_posts/*.md _data/*.log"
